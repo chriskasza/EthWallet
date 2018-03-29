@@ -3,8 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/EthWallet.iml" filepath="$PROJECT_DIR$/EthWallet.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/EthWallet-app.iml" filepath="$PROJECT_DIR$/app/EthWallet-app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/android-apps-EthWallet.iml" filepath="$PROJECT_DIR$/android-apps-EthWallet.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.chrisneric.ethwallet.WalletMenu"
+    tools:layout_editor_absoluteY="25dp">
+
+    <Button
+        android:id="@+id/BackButton"
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="1dp"
+        android:onClick="MainActivity"
+        android:text="Main Menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TransactionTxt" />
+
+    <EditText
+        android:id="@+id/Balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="41dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Balance: "
+        app:layout_constraintBottom_toTopOf="@+id/TrasactinLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TransactionTxt"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="19dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginStart="22dp"
+        android:text="Where transactions would be listed"
+        app:layout_constraintBottom_toTopOf="@+id/BackButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TrasactinLabel" />
+
+    <EditText
+        android:id="@+id/TrasactinLabel"
+        android:layout_width="105dp"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Transactions"
+        app:layout_constraintBottom_toTopOf="@+id/TransactionTxt"
+        app:layout_constraintStart_toStartOf="@+id/TransactionTxt"
+        app:layout_constraintTop_toBottomOf="@+id/Balance" />
+</android.support.constraint.ConstraintLayout>
