@@ -15,4 +15,8 @@ public class MainActivity extends Activity {
     public void WalletMenu (View v){
         startActivity(new Intent(MainActivity.this, WalletMenu.class));
     }
+
+    public void HelpMenu (View v){
+        startActivity(new Intent(MainActivity.this, HelpMenu.class));
+    }
 }

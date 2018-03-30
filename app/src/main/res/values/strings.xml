@@ -2,4 +2,8 @@
     <string name="app_name">Eth Wallet</string>
     <string name="help">Help</string>
     <string name="wallet">Wallet</string>
+    <string name="Balance">Balance:</string>
+    <string name="Transactions">Transactions</string>
+    <string name="main_menu">Main Menu</string>
+    <string name="where_transactions_could_be_listed">Where transactions could be listed</string>
 </resources>
