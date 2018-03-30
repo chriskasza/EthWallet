@@ -8,7 +8,7 @@
     <string name="where_transactions_could_be_listed">Where transactions could be listed</string>
     <string name="market">Market</string>
     <string name="send">Send</string>
-    <string name="authors"> By\nEric lavoie \nChris kasza</string>
+    <string name="authors"> By\n Chris kasza and Eric Lavoie</string>
     <string name="mainLabel"> Welcome To The Ethereum Wallet</string>
     <string name="transaction"> Transaction:</string>
     <string name="cancel"> Cancel:</string>
@@ -18,6 +18,10 @@
     <string name="ethv">1 ETH = </string>
     <string name="btcv">1 BTC = </string>
     <string name="usd">USD </string>
-    <string name="info"> Information about this app :</string>
-
+    <string name="info">Information about this app :</string>
+    <string name="info1">-This application can be navigated by the labeled buttons at the bottom of the screen as well as the back button on your phone to return to the previous menu</string>
+    <string name="info2">-Main menu list all the menus and functions of this app and can be used to navigate efficiently</string>
+    <string name="info3">-wallet menu will display your ethereum balance and transaction history</string>
+    <string name="info4">-Send menu will prompt you to enter you ethereum address and the amount you would like to send to another user</string>
+    <string name="info5">-Market menu will display the current ethereum value in USD as well as the bitcoint value in USD</string>
 </resources>

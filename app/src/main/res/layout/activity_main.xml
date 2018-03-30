@@ -9,7 +9,7 @@
 
     <Button
         android:id="@+id/WalletButton"
-        android:layout_width="0dp"
+        android:layout_width="161dp"
         android:layout_height="0dp"
         android:layout_marginBottom="16dp"
         android:layout_marginEnd="24dp"
@@ -25,7 +25,7 @@
 
     <Button
         android:id="@+id/helpButton"
-        android:layout_width="0dp"
+        android:layout_width="158dp"
         android:layout_height="0dp"
         android:layout_marginBottom="16dp"
         android:layout_marginEnd="16dp"
@@ -39,7 +39,7 @@
 
     <Button
         android:id="@+id/MarketButton"
-        android:layout_width="0dp"
+        android:layout_width="159dp"
         android:layout_height="0dp"
         android:layout_marginEnd="24dp"
         android:layout_marginStart="24dp"
@@ -52,7 +52,7 @@
 
     <Button
         android:id="@+id/SendButton"
-        android:layout_width="0dp"
+        android:layout_width="151dp"
         android:layout_height="0dp"
         android:layout_marginBottom="13dp"
         android:layout_marginEnd="16dp"
