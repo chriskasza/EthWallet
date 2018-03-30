@@ -5,54 +5,70 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.chrisneric.ethwallet.WalletMenu"
-    tools:layout_editor_absoluteY="25dp">
+    tools:layout_editor_absoluteY="81dp">
 
     <Button
         android:id="@+id/BackButton"
-        android:layout_width="200dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="1dp"
+        android:layout_width="143dp"
+        android:layout_height="76dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
         android:onClick="MainActivity"
-        android:text="Main Menu"
+        android:text="@string/main_menu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TransactionTxt" />
+        app:layout_constraintTop_toBottomOf="@+id/Transaction" />
 
     <EditText
-        android:id="@+id/Balance"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="100dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="41dp"
+        android:id="@+id/Transaction"
+        android:layout_width="298dp"
+        android:layout_height="240dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Balance: "
-        app:layout_constraintBottom_toTopOf="@+id/TrasactinLabel"
+        android:inputType="textMultiLine"
+        android:selectAllOnFocus="false"
+        android:text="@string/where_transactions_could_be_listed"
+        app:layout_constraintBottom_toTopOf="@+id/BackButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/balanceLabel" />
+
+    <TextView
+        android:id="@+id/transactionLabel"
+        android:layout_width="101dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="16dp"
+        android:text="Transactions:"
+        app:layout_constraintBottom_toTopOf="@+id/Transaction"
+        app:layout_constraintStart_toStartOf="@+id/balanceLabel" />
+
+    <TextView
+        android:id="@+id/balanceLabel"
+        android:layout_width="84dp"
+        android:layout_height="28dp"
+        android:layout_marginBottom="55dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:text="Balance:"
+        app:layout_constraintBottom_toTopOf="@+id/Transaction"
+        app:layout_constraintEnd_toStartOf="@+id/textView3"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/TransactionTxt"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="19dp"
-        android:layout_marginEnd="22dp"
-        android:layout_marginStart="22dp"
-        android:text="Where transactions would be listed"
-        app:layout_constraintBottom_toTopOf="@+id/BackButton"
+        android:id="@+id/textView3"
+        android:layout_width="228dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:text="0.00 ETH"
+        app:layout_constraintBottom_toTopOf="@+id/Transaction"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TrasactinLabel" />
-
-    <EditText
-        android:id="@+id/TrasactinLabel"
-        android:layout_width="105dp"
-        android:layout_height="0dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Transactions"
-        app:layout_constraintBottom_toTopOf="@+id/TransactionTxt"
-        app:layout_constraintStart_toStartOf="@+id/TransactionTxt"
-        app:layout_constraintTop_toBottomOf="@+id/Balance" />
+        app:layout_constraintStart_toEndOf="@+id/balanceLabel"
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>
