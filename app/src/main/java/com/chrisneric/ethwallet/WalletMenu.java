@@ -14,7 +14,7 @@ public class WalletMenu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wallet_menu);
 
-        TextView outLabel = findViewById(R.id.textView3);
+        TextView outLabel = findViewById(R.id.ethBalance);
 
         getEthBalance(outLabel);
     }

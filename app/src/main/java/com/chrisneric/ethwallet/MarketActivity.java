@@ -9,7 +9,6 @@ import android.widget.TextView;
 import static com.chrisneric.ethwallet.EthProxy.getEthValue;
 
 public class MarketActivity extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
