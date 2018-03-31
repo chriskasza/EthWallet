@@ -22,7 +22,8 @@ public class WalletMenu extends AppCompatActivity {
     public void MainActivity(View v) {
         startActivity(new Intent(WalletMenu.this, MainActivity.class));
     }
-    public void SendActivity (View v){
+
+    public void SendActivity(View v) {
         startActivity(new Intent(WalletMenu.this, SendActivity.class));
     }
 }

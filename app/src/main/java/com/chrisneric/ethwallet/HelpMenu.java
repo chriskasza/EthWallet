@@ -18,7 +18,7 @@ public class HelpMenu extends AppCompatActivity {
         startActivity(new Intent(HelpMenu.this, MainActivity.class));
     }
 
-    public void WalletMenu (View v){
+    public void WalletMenu(View v) {
         startActivity(new Intent(HelpMenu.this, WalletMenu.class));
     }
 }

@@ -16,7 +16,7 @@
     <string name="address"> Address:</string>
     <string name="input"> Enter here</string>
     <string name="ethv">1 ETH = </string>
-    <string name="btcv">1 BTC = </string>
+    <string name="btcv">1 ETH = </string>
     <string name="usd">USD </string>
     <string name="info">Information about this app :</string>
     <string name="info1">-This application can be navigated by the labeled buttons at the bottom of the screen as well as the back button on your phone to return to the previous menu</string>
