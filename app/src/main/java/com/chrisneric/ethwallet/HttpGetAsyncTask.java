@@ -32,7 +32,8 @@ public class HttpGetAsyncTask extends AsyncTask<String, Void, InputStream> {
             int statusCode = urlConnection.getResponseCode();
 
             if (statusCode == 200) {
-                return new BufferedInputStream(urlConnection.getInputStream());
+                BufferedInputStream is = new BufferedInputStream(urlConnection.getInputStream());
+                return is;
             } else {
                 // Status code is not 200
                 // Do something to handle the error

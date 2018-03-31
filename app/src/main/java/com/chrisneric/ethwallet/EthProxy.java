@@ -18,8 +18,17 @@ public class EthProxy {
         BufferedReader streamReader = new BufferedReader(new InputStreamReader(is, "UTF-8"));
         StringBuilder responseStrBuilder = new StringBuilder();
         String line;
+
+        if (!streamReader.ready()) {
+            System.out.println("########################\nNOT READY");
+            return null;
+        }
+
         while ((line = streamReader.readLine()) != null) {
-            responseStrBuilder.append(line + "\n");
+            responseStrBuilder.append(line);
+            if (!streamReader.ready()) {
+                break;
+            }
         }
         JSONObject jsonObject = new JSONObject(responseStrBuilder.toString());
 
@@ -41,13 +50,14 @@ public class EthProxy {
         task.execute(ETH_ACCOUNT_URL);
     }
 
-    public static void getEthValue(final TextView outLabel) {
+    public static void getEthValue(final TextView usdLabel, final TextView btcLabel) {
         HttpGetAsyncTask task = new HttpGetAsyncTask();
         task.setUpdateListener(new HttpGetAsyncTask.OnUpdateListener() {
             public void onUpdate(InputStream obj) {
                 try {
                     ethStatus = convertStreamToJson(obj);
-                    outLabel.setText(ethStatus.getJSONObject("result").getString("ethusd"));
+                    usdLabel.setText(ethStatus.getJSONObject("result").getString("ethusd"));
+                    btcLabel.setText(ethStatus.getJSONObject("result").getString("ethbtc"));
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
