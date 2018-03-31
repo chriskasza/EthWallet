@@ -5,18 +5,17 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class WalletMenu extends AppCompatActivity {
+public class SendActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_wallet_menu);
+        setContentView(R.layout.activity_send_menu);
     }
-
     public void MainActivity (View v){
-        startActivity(new Intent(WalletMenu.this, MainActivity.class));
+        startActivity(new Intent(SendActivity.this, MainActivity.class));
     }
-    public void SendActivity (View v){
-        startActivity(new Intent(WalletMenu.this, SendActivity.class));
+    public void WalletMenu (View v){
+        startActivity(new Intent(SendActivity.this, WalletMenu.class));
     }
 }

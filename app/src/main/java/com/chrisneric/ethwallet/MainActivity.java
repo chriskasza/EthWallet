@@ -19,4 +19,10 @@ public class MainActivity extends Activity {
     public void HelpMenu (View v){
         startActivity(new Intent(MainActivity.this, HelpMenu.class));
     }
+    public void MarketActivity (View v){
+        startActivity(new Intent(MainActivity.this, MarketActivity.class));
+    }
+    public void SendActivity (View v){
+        startActivity(new Intent(MainActivity.this, SendActivity.class));
+    }
 }
